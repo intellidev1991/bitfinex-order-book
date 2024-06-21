@@ -1,0 +1,102 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #112331;
+  color: #e0e0e0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: right;
+}
+
+th {
+  color: #a2abb2;
+}
+thead th {
+  text-transform: uppercase;
+  width: 25%;
+}
+
+button {
+  margin: 5px;
+  padding: 5px 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #888;
+}
+
+label {
+  margin: 10px 0;
+  display: block;
+}
+
+.connection-status {
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  background-color: rgb(23, 44, 61);
+}
+
+.order-book {
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-book-descriptor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #2f3d49;
+}
+
+.order-book-column {
+  width: 100%;
+}
+
+.order-book-column table {
+  width: 100%;
+}
+
+.order-book-column th,
+.order-book-column td {
+  position: relative;
+}
+
+.order-book-column th {
+  text-align: right;
+}
+
+.order-book-column td::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.order-book-column td {
+  position: relative;
+  z-index: 1;
+  background-color: transparent;
+}
+
+.order-book-name {
+  color: rgb(162, 171, 178);
+}
