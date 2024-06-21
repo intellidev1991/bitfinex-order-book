@@ -9,3 +9,7 @@ In the project directory, you can run:
 ## Run the project
 
 ### `yarn start`
+
+## Screenshot
+
+![alt text](img.png)
